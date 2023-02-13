@@ -38,9 +38,8 @@ long double fact(int N)
 
 int main()
 {
-	vector<size_t> v = { 1, 2, 3, 4, 5, 6 };
-	vector<size_t> v1 = { 1, 4, 5, 8, 2, 7, 9, 3, 6, 10 };
-	vector<size_t> v2 = { 1, 4, 5, 8, 2, 7, 9, 3, 6, 10, 11, 12 };
+	vector<size_t> v = { 1, 4, 5, 8, 2, 7, 9, 3, 6, 10 };
+	vector<size_t> v2 = { 1, 4, 5, 8, 2, 7, 9, 3, 6, 10, 11, 12, 13, 14, 15 };
 	vector<size_t> v3 = { 1, 4, 5, 8, 2, 7, 9, 3, 6, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 	boost::timer t;
 	t.restart();
@@ -56,7 +55,7 @@ int main()
 	cout << "\n" << "Algorithm Narayana duratuon with output: " << "\n"
 		<< "t(10) = " << duration << " seconds" << "\n" << "\n"
 		<< "Algorithm Narayana duratuon without output:" << "\n" << "Be patient..."
-		<< "t(10) = " << getPermutationDuration(v1) << " seconds" << "\n"
+		<< "t(10) = " << getPermutationDuration(v) << " seconds" << "\n"
      	<< "t(15) = " << getPermutationDuration(v2) << " seconds" << "\n"
 	    << "t(20) = " << getPermutationDuration(v3) << " seconds" << "\n" << endl;
 	cout << "T(50) = " << fact(50) << " seconds" << endl;
